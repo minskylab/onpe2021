@@ -1,0 +1,31 @@
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "Bregy Malpartida", email = "bregy@minsky.cc"},
+]
+dependencies = [
+    "aiohttp[speedups]~=3.7",
+    "polars~=0.8",
+    "pandas~=1.2",
+    "aiofiles~=0.7",
+]
+requires-python = ">=3.9"
+dynamic = ["classifiers"]
+license = {text = "MIT"}
+
+[project.urls]
+homepage = ""
+
+[build-system]
+requires = ["pdm-pep517"]
+build-backend = "pdm.pep517.api"
+
+[tool]
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+dev = [
+    "autopep8~=1.5",
+    "mypy~=0.812",
+]
